@@ -20,5 +20,5 @@ from .views import CalculationAPI
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('calculate/', CalculationAPI.as_view())
+    path('', CalculationAPI.as_view())
 ]

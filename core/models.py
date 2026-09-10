@@ -3,7 +3,7 @@ from django.db import models
 class Calculation(models.Model):
     number1=models.IntegerField()
     number2=models.IntegerField()
-    operator=models.CharField(max_length=10, choices=[('ADDITITON', 'Addition'), ('SUBTRACTION', 'Subtraction'), ('MULTIPLICATION', 'Multiplication'), ('DIVISION', 'Division')])
+    operator=models.CharField(max_length=15, choices=[('ADDITITON', 'Addition'), ('SUBTRACTION', 'Subtraction'), ('MULTIPLICATION', 'Multiplication'), ('DIVISION', 'Division')])
     result=models.IntegerField()
     created_on=models.DateTimeField(auto_now_add=True)
 
