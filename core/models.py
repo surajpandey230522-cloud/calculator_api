@@ -1,10 +1,10 @@
 from django.db import models
 
 class Calculation(models.Model):
-    number1=models.IntegerField()
-    number2=models.IntegerField()
+    number1=models.FloatField()
+    number2=models.FloatField()
     operator=models.CharField(max_length=15, choices=[('ADDITITON', 'Addition'), ('SUBTRACTION', 'Subtraction'), ('MULTIPLICATION', 'Multiplication'), ('DIVISION', 'Division')])
-    result=models.IntegerField()
+    result=models.FloatField()
     created_on=models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
