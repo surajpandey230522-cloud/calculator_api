@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Calculation
+from core.models import Calculation
 
 class CalculatorSerializer(ModelSerializer):
     class Meta:

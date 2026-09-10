@@ -1,6 +1,6 @@
 from rest_framework.views import APIView
 from .serializers import CalculatorSerializer
-from .models import Calculation
+from core.models import Calculation
 from rest_framework.response import Response
 
 class CalculationAPI(APIView):
